@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1008296588691",
+    "firebase_url": "https://virtual-closet-898a2.firebaseio.com",
+    "project_id": "virtual-closet-898a2",
+    "storage_bucket": "virtual-closet-898a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008296588691:android:2685ef4e875e7bd7fc2466",
+        "android_client_info": {
+          "package_name": "com.VirtualCloset.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008296588691-vkhoeqonpgqbr53sshovt33poh4074a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX2E3-JDGQv5lNZB7v1CHSUyTrF4TmeNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008296588691-vkhoeqonpgqbr53sshovt33poh4074a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
