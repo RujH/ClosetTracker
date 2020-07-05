@@ -73,7 +73,7 @@ class _SettingsFormState extends State<SettingsForm> {
                   color: Colors.blueGrey,
                   child: Text(
                     'Update',
-                    style: TextStyle(color: Colors.deepOrangeAccent),
+                    style: TextStyle(color: Color(0xffFF7F50)),
                   ),
                   onPressed: () async {
                     if (_formKey.currentState.validate()){

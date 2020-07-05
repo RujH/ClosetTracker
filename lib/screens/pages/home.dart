@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-          color: Colors.yellow[100],
+          color: Color(0xffFF7F50),
           child: Center(
             child: Text(
               "HOME PAGE",

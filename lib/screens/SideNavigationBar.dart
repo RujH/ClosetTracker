@@ -25,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Scaffold(
 
         body: FoldableSidebarBuilder(
-          drawerBackgroundColor: Colors.yellow[200],
+          drawerBackgroundColor: Color(0xffFF7F50),
           drawer: CustomDrawer(closeDrawer: (){
             setState(() {
               drawerStatus = FSBStatus.FSB_CLOSE;
@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
           status: drawerStatus,
         ),
         floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.blueGrey,
+            backgroundColor: Colors.blueGrey[800],
             child: Icon(Icons.menu,color: Colors.white,),
             onPressed: () {
               setState(() {
@@ -58,7 +58,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     return Container(
-      color: Colors.white,
+      color: Colors.blueGrey[800],
       width: mediaQuery.size.width * 0.60,
       height: mediaQuery.size.height,
       child: Column(
@@ -76,7 +76,9 @@ class CustomDrawer extends StatelessWidget {
 //                    height: 100,
 //                  ),
                   SizedBox(height: 10,),
-                  Text("Closet Tracker")
+                  //TextSpan(text: "Closet Tracker", style: TextStyle(color: Colors.while),),
+                  Text("Closet Tracker", style: TextStyle(color: Colors.white),)
+
 
                 ],
               )),
@@ -86,71 +88,84 @@ class CustomDrawer extends StatelessWidget {
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Profile()));
               closeDrawer;
             },
-            leading: Icon(Icons.person),
-            title: Text(
-              "Your Profile",
-            ),
+            leading: Icon(Icons.person, color: Colors.white,),
+            title: Text("Your Profile",  style: TextStyle(color: Colors.white),),
           ),
-          Divider(
-            height: 2,
-            color: Colors.blueGrey,
-          ),
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Closet");
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Closet()));
               closeDrawer;
             },
-            leading: Icon(MdiIcons.tshirtV),
-            title: Text("Closet"),
+            leading: Icon(MdiIcons.tshirtV, color: Colors.white,),
+            title: Text("Closet",  style: TextStyle(color: Colors.white),),
           ),
-          Divider(
-            height: 2,
-            color: Colors.blueGrey,
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
+          ListTile(
+            onTap: () {
+              debugPrint("Tapped Shop");
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Shop()));
+              closeDrawer;
+            },
+            leading: Icon(Icons.shopping_cart, color: Colors.white,),
+            title: Text("Shop", style: TextStyle(color: Colors.white),),
           ),
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Favorite");
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Favorite()));
               closeDrawer;
             },
-            leading: Icon(Icons.favorite),
-            title: Text("Favorite"),
+            leading: Icon(Icons.favorite, color: Colors.white,),
+            title: Text("Favorite", style: TextStyle(color: Colors.white),),
           ),
-          Divider(
-            height: 2,
-            color: Colors.blueGrey,
-          ),
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Settings");
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SettingsForm()));
               closeDrawer;
             },
-            leading: Icon(Icons.settings),
-            title: Text("Settings"),
+            leading: Icon(Icons.settings, color: Colors.white,),
+            title: Text("Settings", style: TextStyle(color: Colors.white),),
           ),
-          Divider(
-            height: 2,
-            color: Colors.blueGrey,
-          ),
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Notifications");
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SettingsForm()));
+              closeDrawer;
             },
-            leading: Icon(Icons.notifications),
-            title: Text("Notifications"),
+            leading: Icon(Icons.notifications, color: Colors.white,),
+            title: Text("Notifications",  style: TextStyle(color: Colors.white),),
           ),
-          Divider(
-            height: 2,
-            color: Colors.blueGrey,
-          ),
+//          Divider(
+//            height: 2,
+//            //color: Colors.blueGrey,
+//          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Log Out");
             },
-            leading: Icon(Icons.exit_to_app),
-            title: Text("Log Out"),
+            leading: Icon(Icons.exit_to_app, color: Colors.white,),
+            title: Text("Log Out",  style: TextStyle(color: Colors.white),),
           ),
         ],
       ),
