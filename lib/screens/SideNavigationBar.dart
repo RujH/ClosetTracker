@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foldable_sidebar/foldable_sidebar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:myapp/screens/pages/addToCloset.dart';
-import 'package:myapp/screens/pages/closet.dart';
+import 'file:///C:/Users/Ruj/AndroidStudioProjects/myapp/lib/screens/pages/Closet/closet.dart';
 import 'package:myapp/screens/pages/profile.dart';
 import 'package:myapp/screens/pages/favorite.dart';
 import 'package:myapp/screens/pages/home.dart';
