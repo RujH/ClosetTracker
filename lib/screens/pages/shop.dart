@@ -16,7 +16,7 @@ class Shop extends StatelessWidget {
       child: Center(
           child: Text (
             "shop page",
-            style: TextStyle(fontSize: 20,color: Colors.white),
+            style: TextStyle(fontSize: 20,color: Colors.grey, fontWeight: FontWeight.bold),
           )
       ),
     );

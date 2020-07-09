@@ -7,22 +7,91 @@ import 'package:myapp/models/cloth.dart';
 
 class Closet extends StatelessWidget {
 
-  final AuthService _auth = AuthService();
-
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Color(0xff2F3641),
-      child: Center(
-          child: Text (
-            "Clothes page",
-            style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.white
+      return Scaffold(
+        backgroundColor: Colors.white,
+        body: new Column(
+          children: <Widget>[
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only(top: 50.0, bottom: 20.0),
+              ),
             ),
-          )
-      ),
-    );
+            Container(
+              width: 380.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                color: Color(0xff2F3641),
+                borderRadius: BorderRadius.circular(20.0),
+                border: Border.all(
+                  color: Colors.grey.withOpacity(0.3), width: .2
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only( bottom: 20.0),
+              ),
+            ),
+            Container(
+              width: 380.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                color: Color(0xffFF7F50),
+                borderRadius: BorderRadius.circular(20.0),
+                border: Border.all(
+                    color: Colors.grey.withOpacity(0.3), width: .2
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+              ),
+            ),
+            Container(
+              width: 380.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                color: Color(0xff2F3641),
+                borderRadius: BorderRadius.circular(20.0),
+                border: Border.all(
+                    color: Colors.grey.withOpacity(0.3), width: .2
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+              ),
+            ),
+            Container(
+              width: 380.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                color: Color(0xffFF7F50),
+                borderRadius: BorderRadius.circular(20.0),
+                border: Border.all(
+                    color: Colors.grey.withOpacity(0.3), width: .2
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+//    return Container(
+//      color: Color(0xff2F3641),
+//      child: Center(
+//          child: Text (
+//            "Clothes page",
+//            style: TextStyle(fontSize: 20,  color: Colors.white, fontWeight: FontWeight.bold),
+//          )
+//      ),
+//    );
   }
 }
