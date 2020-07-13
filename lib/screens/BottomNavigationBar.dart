@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'file:///C:/Users/Ruj/AndroidStudioProjects/myapp/lib/screens/pages/settings_form.dart';
 import 'package:myapp/screens/pages/addToCloset.dart';
-import 'file:///C:/Users/Ruj/AndroidStudioProjects/myapp/lib/screens/pages/Closet/closet.dart';
+import 'file:///C:/Users/Ruj/AndroidStudioProjects/myapp/lib/screens/pages/closet.dart';
 import 'package:myapp/screens/pages/profile.dart';
 import 'package:myapp/screens/pages/favorite.dart';
 import 'package:myapp/screens/pages/shop.dart';
