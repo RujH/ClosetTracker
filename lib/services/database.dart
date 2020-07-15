@@ -19,9 +19,9 @@ class DatabaseService{
 
   }
   //cloth list from snapshot
-  List<Cloth> _clothListFromSnapshot(QuerySnapshot snapshot){
+  List<cloth> _clothListFromSnapshot(QuerySnapshot snapshot){
     return snapshot.documents.map((doc) {
-      return Cloth(
+      return cloth(
         type : doc.data['type'] ?? '',
         size: doc.data['size'] ?? '',
         color: doc.data['color'] ?? '',
@@ -45,7 +45,7 @@ class DatabaseService{
 
   //get closets stream
   //notify us of any document changes in our database
-  Stream <List<Cloth>> get clothItem {
+  Stream <List<cloth>> get clothItem {
     return clothCollection.snapshots()
     .map(_clothListFromSnapshot);
   }
