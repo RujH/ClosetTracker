@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/pages/Closet/Cloth/Cloth.dart';
+import 'package:myapp/screens/pages/Closet/Shoes/Shoes.dart';
 import 'package:myapp/services/auth.dart';
 import 'package:myapp/services/database.dart';
 import 'package:provider/provider.dart';
@@ -58,7 +59,9 @@ class Closet extends StatelessWidget {
               ),
           ),
           InkWell(
-            onTap: () {print("box 2 ");},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Shoes()));
+            },
             child: Container(
               width: 390.0,
               height: 130.0,
